@@ -1,0 +1,20 @@
+import java.util.*;
+import java.io.*;
+
+public class CentauriPrime {
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(System.in);
+		int T = Integer.parseInt(scan.next());
+		PrintWriter pw = new PrintWriter("out.txt");
+		for(int i = 0; i < T; i++) {
+			String temp = scan.next();
+			pw.write("Case #" + (i+1) + ": " + temp + " is ruled by " + ruler(temp));
+		}
+		pw.flush();
+		pw.close();
+	}
+	
+	public static String ruler(String s) {
+		
+	}
+}
